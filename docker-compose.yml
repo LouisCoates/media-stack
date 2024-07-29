@@ -14,8 +14,8 @@ services:
       - NET_ADMIN
     environment:
       - VPN_SERVICE_PROVIDER=protonvpn # Valid values: nordvpn, expressvpn, protonvpn, surfshark or custom
-      - OPENVPN_USER=iGR1MfVfdf5tl2KW+pmp
-      - OPENVPN_PASSWORD=QIBwH5khQyfhSceQyjqLLjniniFi7OS7
+      - OPENVPN_USER=
+      - OPENVPN_PASSWORD=
       #- FIREWALL_VPN_INPUT_PORTS= 5080
       - VPN_PORT_FORWARDING=ON
       #- LOG_LEVEL = debug
@@ -274,7 +274,7 @@ services:
     restart: unless-stopped
     command: tunnel run
     environment:
-      - TUNNEL_TOKEN=eyJhIjoiODgzMWRlZWExMzQ0ZTEyNTFiOTI1ZDhmMzM1MmJmYmYiLCJ0IjoiNjQ3ZDQ3M2ItZjJiNi00ZTlhLWI1NjgtMTRkNDZlZWM5MWQ3IiwicyI6IlpEWmtNRFZsTUdJdE9XWTVaUzAwTjJZNUxXRmtNelF0TVdFeE16ZGhaR1ZrTkdJMSJ9
+      - TUNNEL_TOKEN=
   
   # Doc: https://github.com/navilg/cleanmyarr
   # cleanmyarr:
